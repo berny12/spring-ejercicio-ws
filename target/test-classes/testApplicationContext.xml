@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+
+    <!-- para crear el contexto de prueba del cliente -->
+	<bean id="webServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate">
+		<!-- ubicacion del wsdl -->
+		<property name="defaultUri" value="http://localhost:8080/spring-ejercicio-ws/services/recepcionNotificaciones"></property>
+		<!-- que tipo de marshaller se va usar -->
+		<property name="marshaller" ref="xmlMarshaler"></property>
+		<property name="unmarshaller" ref="xmlMarshaler"></property>
+	</bean>
+	
+
+	<!-- asignamos el marshaller para el webservie -->
+	<bean id="xmlMarshaler" class="org.springframework.oxm.jaxb.Jaxb2Marshaller"  >
+	    <!-- donde se encuetran las clases a serializar -->
+		<property name="contextPath" value="com.synergyj.concepto.spring.entidades.jaxb"></property>
+	
+	 </bean>
+</beans>

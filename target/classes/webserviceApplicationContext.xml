@@ -10,4 +10,9 @@
 	<!-- manejador de anotaciones para web services -->
 	<web-services:annotation-driven/>
 
+	<!-- agregamod el contexto configurar el endpoint-->
+	<context:component-scan base-package="com.synergyj.concepto.spring.service.server.impl"></context:component-scan>
+	
+	<!-- para publicar el wsdl -->
+	<web-services:static-wsdl id="wsdldefinicion"  location="classpath:/recepcionNotificaciones.wsdl"/>
 </beans>

@@ -1,0 +1,7 @@
+com/synergyj/concepto/spring/service/server/impl/RecepcionNotificacionesServiceImpl.class
+com/synergyj/concepto/spring/service/server/impl/RecepcionNotificacionesServiceEndpoint.class
+com/synergyj/concepto/spring/entidades/jaxb/package-info.class
+com/synergyj/concepto/spring/entidades/jaxb/RespuestaXMLResponse.class
+com/synergyj/concepto/spring/entidades/jaxb/ObjectFactory.class
+com/synergyj/concepto/spring/entidades/jaxb/NotificacionXMLRequest.class
+com/synergyj/concepto/spring/service/server/RecepcionNotificacionesService.class

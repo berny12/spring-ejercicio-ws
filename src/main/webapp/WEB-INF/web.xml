@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>spring-mvc</display-name>
+  <display-name>spring-ejercicio-ws</display-name>
   
   <!-- se agrega la configuracion del MessageDispatcherServlet-->
   <servlet>
   		<servlet-name>ws-spring</servlet-name>
   		<servlet-class>org.springframework.ws.transport.http.MessageDispatcherServlet</servlet-class>
+  		<init-param>
+  			<param-name>contextConfigLocation</param-name>
+  			<param-value>classpath:/webserviceApplicationContext.xml</param-value>
+  		</init-param>
+  		<init-param>
+  			<param-name>transformWsdlLocations</param-name>
+  			<param-value>true</param-value>
+  		</init-param>
+  		<load-on-startup>1</load-on-startup>
   		
   </servlet>
   <!-- para mapear peticones -->

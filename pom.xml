@@ -89,7 +89,7 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/spring-mvc</contextPath>
+						<contextPath>/spring-ejercicio-ws</contextPath>
 					</webApp>
 					<systemProperties>
 						<systemProperty>
